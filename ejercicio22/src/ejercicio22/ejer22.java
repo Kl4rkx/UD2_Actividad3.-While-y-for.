@@ -18,22 +18,28 @@ public class ejer22 {
 		// Se verifica si el número introducido es menor que 1 o mayor que 4.
 		if (menu < 1 || menu > 4) {
 			do { // Si cumple la condición entra igualmente en el bucle.
-				System.out.println("Introduce un número entre 1 y 3, Pulsa 4 para salir");
+				System.out.println("------------------\nMENÚ DE SELECCIÓN\n------------------");
+				System.out.println("1. Para seleccionar el número 1.\n2. Para seleccionar el número 2.\n3. Para seleccionar el número 3.\n4. Para salir.\n");
 				menu = sc.nextInt();
 				switch (menu) {
 				case 1:
-					System.out.println("Has seleccionado el 1");
+					System.out.println("Has seleccionado el número 1\n");
 					break;
 				case 2:
-					System.out.println("Has seleccionado el 2");
+					System.out.println("Has seleccionado el número 2\n");
 					break;
 				case 3:
-					System.out.println("Has seleccionado el 3");
+					System.out.println("Has seleccionado el número 3\n");
 					break;
+				default:
+					if (menu!=4) {
+						System.out.println("Introduce un número valido\n");
+						break;
+					}
 				}
 			} while (menu!=4); // Cuando la variable menu sea igual a 4 sale del bucle.
 			
-			System.out.println("ADIOS");
+			System.out.println("ADIÓS");
 		}
 
 	}
