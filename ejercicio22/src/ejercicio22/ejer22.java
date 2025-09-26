@@ -15,9 +15,7 @@ public class ejer22 {
 		int menu = 0;
 		Scanner sc = new Scanner(System.in);
 		
-		// Se verifica si el número introducido es menor que 1 o mayor que 4.
-		if (menu < 1 || menu > 4) {
-			do { // Si cumple la condición entra igualmente en el bucle.
+			do {
 				System.out.println("------------------\nMENÚ DE SELECCIÓN\n------------------");
 				System.out.println("1. Para seleccionar el número 1.\n2. Para seleccionar el número 2.\n3. Para seleccionar el número 3.\n4. Para salir.\n");
 				menu = sc.nextInt();
@@ -40,7 +38,6 @@ public class ejer22 {
 			} while (menu!=4); // Cuando la variable menu sea igual a 4 sale del bucle.
 			
 			System.out.println("ADIÓS");
-		}
 
 	}
 
